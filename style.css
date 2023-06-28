@@ -59,49 +59,26 @@ li {
 }
 
 /* ORDER GRID*/
-.fullGrid {
-    display: flex;
-    flex-direction: column;
+.section-header {
+    text-align: center;
 }
 
-.orderGrid {
+.pokeyourway-grid {
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 }
 
-.orderGriddHeader {
+.pokeyourway-item {
+    flex-basis: 33.33333%;
     text-align: center;
-}
-
-.orderImg {
-max-width: 400px;
-max-height: 400px;
-width: 95%;
-margin-left: auto;
-margin-right: auto;
-}
-
-.imageWrapper {
-margin: 20px;
-justify-content: center;
-align-items: center;
-width: 400px;
-height: 400px;
-}
-
-.itemTitle {
-    text-align: center;
-    font-family: "Brandon Grotesque",sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
 }
 
 /*ORDER BUTTON*/
-.orderBtn {
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.image-wrapper .component-cta-btn {
     color: white;
     background-color: #ff2938;
+    margin: 0 auto;
     display: none;
+
 }
