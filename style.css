@@ -63,6 +63,21 @@ li {
     text-align: center;
 }
 
+.pokeyourway-item-title{
+    font-size: 26px;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: 500;
+}
+.pokeyourway-item,
+.pokeyourway-item:visited {
+    text-decoration: none;
+    color: black;
+}
+.pokeyourway {
+    width: 80%;
+    margin: auto;
+}
+
 .pokeyourway-grid {
 display: flex;
 justify-content: center;
@@ -73,12 +88,70 @@ flex-wrap: wrap;
     flex-basis: 33.33333%;
     text-align: center;
 }
+.image-wrapper{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.pokeyourway-item-image {
+    align-items: center;
+    justify-content: center;
+}
 
 /*ORDER BUTTON*/
-.image-wrapper .component-cta-btn {
+.image-wrapper .component-cta-btn, 
+.image-wrapper .component-cta-btn:visited,
+.image-wrapper .component-cta-btn:hover {
+    display: none;
+    font-size: 20px;
     color: white;
     background-color: #ff2938;
-    margin: 0 auto;
-    display: none;
+    border: 0px solid white;
+    width: 200px;
+    padding: 10px 5px;
+    position: absolute;
+    margin-top: 180px;
+    border-radius: 5px;
+}
 
+/*REWARDS SECTION*/
+.pokeRewards {
+    margin-top: 100px;
+}
+.rewardsSection {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.rewardsWrapper {
+display: flex;
+justify-content: space-around;
+gap: 200px;
+}
+
+.phoneFrame {
+    height: 670px;
+    width: 350px;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+.rewardsList {
+    list-style-type: none; /* Remove bullets */
+    align-items: left;
+}
+
+.rewardsCircle {
+    display: inline-block;
+    padding: 20px;
+    background-color: #54a5ab;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
