@@ -1,30 +1,56 @@
 /*HEAD NAV*/
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    font-family: "Trade Gothic LT Std Bold", sans-serif;
+    line-height: 2.125rem;
+    font-weight: bold;
+    height: 100px;
+
 }
 
 .logo {
 width: 190px;
+margin: 20px;
 }
 
 nav ul {
    display: flex; 
+   gap: 30px;
    list-style-type: none;
-   text-transform: uppercase;
    margin-top: 0px;
 }
 
-li {
-    margin: 30px 20px;
+nav ul li,
+.accountOrderWrapper {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 22px;
+    margin-top: 40px;
+    text-transform: uppercase;
 }
 
-.accountOrderWrapper {
-    margin-top: 100px;
+header a {
+    text-decoration: none;
 }
+
+.accountOrderWrapper a:visited {
+    color: black;
+}
+
+#navOrderBtn, 
+.accountOrderWrapper #navOrderBtn :visited {
+    color: white;
+    background-color: #ff2938;
+    border: 0px solid white;
+    padding: 10px;
+}
+
+
+
 
 /*PHOTO GALLARY*/
 
@@ -121,21 +147,34 @@ flex-wrap: wrap;
 .pokeRewards {
     margin-top: 100px;
 }
-.rewardsSection {
+.rewardsSectionHeader {
     text-align: center;
     width: 80%;
     margin: auto;
-    line-height: 1.4;
+}
+.rewardsSectionHeader h2{
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 46px;
 }
 
-.rewardsWrapper {
-display: flex;
-justify-content: space-around;
-gap: 200px;
+.rewardsSectionHeader p{
+    font-size: 24px; 
+    font-family: "Trade Gothic LT Std Bold", sans-serif;
+    color: #818181;
+    line-height: 1.4;
+    margin-top: -20px;
+    font-weight: 200    ;
+
+}
+
+.rewardsSectionWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 .phoneFrame {
-    height: 670px;
+    height: 470px;
     width: 350px;
     background-color: aquamarine;
     display: inline-block;
@@ -143,15 +182,25 @@ gap: 200px;
 
 .rewardsList {
     list-style-type: none; /* Remove bullets */
-    align-items: left;
+    vertical-align: middle;
+
 }
 
 .rewardsCircle {
     display: inline-block;
-    padding: 20px;
+    height: 80px; 
+    width: 80px;     
     background-color: #54a5ab;
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rewardsList li {
+    font-size: 28px;
+    font-family: "Trade Gothic LT Std Bold", sans-serif;
+
 }

@@ -20,13 +20,13 @@ for (let i = 0; i < gridDivs.length; i++) {
 
     gridDivs[i].addEventListener("mouseover",() =>{
        orderBtns[i].style.display = "inline-block";
-       menuImages[i].style.width = "110%"
+       menuImages[i].style.width = "80%"
        menuImages[i].style.height = "auto"
 
     })
     gridDivs[i].addEventListener("mouseout",() =>{
         orderBtns[i].style.display = "none";
-        menuImages[i].style.width = "90%"
+        menuImages[i].style.width = "70%"
         menuImages[i].style.height = "auto"
 
      })
